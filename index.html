@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok Downloader Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TikTok Downloader</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>TikTok <span>Downloader</span></h1>
-        <p>Pega el enlace del video para descargarlo sin marca de agua.</p>
+        <h1>TikTok Video Downloader</h1>
         
         <div class="input-group">
-            <input type="text" id="videoUrl" placeholder="https://www.tiktok.com/@user/video/...">
-            <button onclick="descargarVideo()">Obtener Video</button>
+            <input 
+                type="text" 
+                id="tiktokUrl" 
+                placeholder="Pega el enlace de TikTok aquí"
+                value="https://www.tiktok.com/@usuario/video/123456789"
+            >
+            <button id="downloadBtn">Descargar Video</button>
         </div>
-
-        <div id="resultado">
-            </div>
+        
+        <div id="loading" style="display: none;">
+            <p>Procesando...</p>
+        </div>
+        
+        <div id="result"></div>
     </div>
 
     <script src="script.js"></script>
