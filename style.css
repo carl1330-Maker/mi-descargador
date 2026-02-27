@@ -1,76 +1,62 @@
-/* Estilos modernos y limpios */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #121212; /* Fondo oscuro tipo TikTok */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
     text-align: center;
-    background: #1e1e1e;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    max-width: 450px;
-    width: 90%;
-}
-
-h1 span {
-    color: #fe2c55; /* Rojo TikTok */
-}
-
-p {
-    color: #aaa;
-    font-size: 14px;
 }
 
 .input-group {
-    margin-top: 25px;
     display: flex;
-    flex-direction: column;
     gap: 10px;
+    margin: 20px 0;
 }
 
-input {
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    background: #2b2b2b;
+#tiktokUrl {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#downloadBtn {
+    padding: 10px 20px;
+    background-color: #ff0050;
     color: white;
-    outline: none;
-}
-
-button {
-    padding: 15px;
-    border-radius: 10px;
     border: none;
-    background: #fe2c55;
-    color: white;
-    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
 }
 
-button:hover {
-    background: #ff4d6d;
-    transform: translateY(-2px);
+#downloadBtn:hover {
+    background-color: #e60045;
 }
 
-#resultado {
+#downloadBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#loading {
+    color: #666;
+    margin: 20px 0;
+}
+
+#result {
     margin-top: 20px;
 }
 
-.download-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #25d366; /* Verde para descargar */
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
+.error {
+    color: red;
+    padding: 10px;
+    background-color: #ffeeee;
+    border-radius: 5px;
+}
+
+.success {
+    color: green;
+    padding: 10px;
+    background-color: #eeffee;
+    border-radius: 5px;
 }
